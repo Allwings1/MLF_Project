@@ -91,7 +91,9 @@ Considering the limitations of the features of the original data,  for all IMAGE
 
 ## Division of Training & Test Set and Feature Selection
 
-* In this section, we split the data set into training samples (70%) and test samples (30%). 
+* In this section, we split the data set into training samples (70%) and test samples (30%).
+* Do the standardization.
+* Due to the imbalance of the data, we apply the technique of oversampling, which replicates the samples of the minority classes to increase their number, so as to balance the proportion of classes in the dataset.
 * Then we use random forest method for feature selection.
 
 <div align='center'>
@@ -122,4 +124,6 @@ In this part, we use logistic regression, SVM, decision tree, random forest to b
 
 ## Limitation of our models and improvements
 
-In this prject, reacll, recall, recall!
+* First, it's often difficult to predict defaults using transaction data alone, but we'll still want to give it a try. 
+* Second, since the transaction data is very sparse, our primary goal is to process this data and extract relatively effective features. Compared with the previous practice without time weighting and group summation, our results are optimized.
+* Third, for such imbalanced data, since we need to predict or prevent the occurrence of small probability events, we decided to focus on improving recall instead of accuracy. After 2 days, we will continue to study and hopefully improve these metrics.
