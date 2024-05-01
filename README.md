@@ -12,7 +12,13 @@ Ge Ruiyang| 2301212326
 
 This is a project about using transaction data to predict defaults. In this project, we use several machine learning methods to predict default events based on the transaction data provided by HSBC.
 
-It should be noticed that the dataset is imbalanced (e.g., approximately 99% of the data is non-default data and only 1% of the data is default data), so our priority is to identify the majority of companies that are likely to default to recommend an additional screening, so recall should be our metric of choice rather than accuracy.What's more, There is not much valid information in this dataset, and there are many missing and error values, so caution is required when dealing with features.
+It should be noticed that the dataset is imbalanced (e.g., approximately 99% of the data is non-default data and only 1% of the data is default data), so our priority is to identify the majority of companies that are likely to default to recommend an additional screening, so recall should be our metric of choice rather than accuracy.What's more, There is not much valid information in this dataset, and there are many missing and error values, so caution is required when dealing with features. I will describe it in detail below:
+
+- The first and most important point is that we are dealing with default related forecasts. Due to the serious imbalance of default data, we use the undersampling method to achieve better results. In addition, in this dataset, we focus more on Recall because we want to predict as many customers as possible who are likely to default, not just improve the accuracy of our own predictions.
+
+- Due to the sparsity of transaction data, we spend a lot of effort on data cleaning and processing. As the project progressed, we found that it might be better to focus more on feature engineering rather than just optimizing Recall, because there seemed to be a lot to explore in the data. Default forecasting using transaction data is largely feature-oriented. We construct and screen many useful features from the perspectives of classification summation, time weighting, difference and volatility. In the end, we got a better result.
+
+- To our delight, after optimizing the feature engineering part, **we improved the Recall to more than 90%**. We know in class that 90% is not good for extremely lopsided data that actually has around 99% positives, but considering that we need to make a prediction with less than 40 actual positives, it's actually relatively good.
 
 
 ## Data Cleaning and Processing
