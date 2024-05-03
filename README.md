@@ -26,7 +26,7 @@ It should be noticed that the dataset is imbalanced (e.g., approximately 99% of 
 First, let's focus on the data. In the dataset, we are able to obtain the amount and count of the import and export transactions. It is worth noting that the transaction data has two time indexes "COHORT_MONTH" and "IMAGE_DT", where each "COHORT_MONTH" is June 30 of a certain year which further contains the transaction information of the company in the past 12 months, and under each "COHORT_MONTH" records whether the company defaults or not (e.g. 0 or 1). On June 30th of every month, we need to predict whether the company will default or not based on data from the previous 12 months.
 
 <div align='center'>
-    < img src='pics/0data.png' width='650'/>
+    <img src='pics/0data.png' width='650'/>
 </div>  
 
 
