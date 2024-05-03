@@ -97,7 +97,7 @@ Considering the limitations of the features of the original data,  for all IMAGE
 
 ## Division of Training & Test Set and Feature Selection
 
-* In this section, we split the data set into training samples (70%) and test samples (30%).
+* In this section, we split the data set into training samples (75%) and test samples (25%).
 * Do the standardization.
 * Due to the imbalance of the data, we apply the technique of oversampling, which replicates the samples of the minority classes to increase their number, so as to balance the proportion of classes in the dataset.
 * Then we use random forest method for feature selection.
@@ -110,22 +110,26 @@ Considering the limitations of the features of the original data,  for all IMAGE
 
 In this part, we use logistic regression, SVM, decision tree, random forest to build models and train.
 
+Originally, our Recall was only around 80%:
+
 <div align='center'>
     <img src='pics/+4com1recall.png' width='650'/>
 </div>  
 
+After improvement and optimization, Recall was increased to more than 90%, and RUC also made great progress:
+
 <div align='center'>
-    <img src='pics/+4com2.png' width='650'/>
+    <img src='pics/改进1.png' width='650'/>
+</div>  
+
+<div align='center'>
+    <img src='pics/改进2.png' width='650'/>
 </div>  
 
 * We also trained the LSTM model and obtain the loss and confusion matrix.
 
 <div align='center'>
-    <img src='pics/4loss.png' width='650'/>
-</div>  
-
-<div align='center'>
-    <img src='pics/4LSTM.png' width='650'/>
+    <img src='pics/改进3.png' width='650'/>
 </div>  
 
 ## Limitation of our models and improvements
