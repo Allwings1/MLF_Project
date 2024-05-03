@@ -99,7 +99,16 @@ Considering the limitations of the features of the original data,  for all IMAGE
 
 * In this section, we split the data set into training samples (75%) and test samples (25%).
 * Do the standardization.
-* Due to the imbalance of the data, we apply the technique of oversampling, which replicates the samples of the minority classes to increase their number, so as to balance the proportion of classes in the dataset.
+* Due to the imbalance of the data, we apply the technique of oversampling, which replicates the samples of the minority classes to increase their number, so as to balance the proportion of classes in the dataset. As is illustrated in the following pictures, the training data is oversampled as the balanced dataset. 
+
+<div align='center'>
+    <img src='pics/oversampling1.png' width='650'/>
+</div> 
+
+<div align='center'>
+    <img src='pics/oversampling2.png' width='650'/>
+</div> 
+
 * Then we use random forest method for feature selection.
 
 <div align='center'>
