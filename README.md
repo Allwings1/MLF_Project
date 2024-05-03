@@ -134,7 +134,7 @@ After improvement and optimization, Recall was increased to more than 90%, and R
 
 ## Future outlook
 
-In this Project, we cleaned and constructed the characteristics of the transaction default data. On this basis, we used five kinds of machine learning models for predictive analysis, and obtained a Recall of more than 90%. We know that this value still needs to be increased, which can be considered from the following aspects:
+In this Project, we cleaned and constructed the characteristics of the transaction default data. On this basis, we used five kinds of machine learning models for predictive analysis, and **obtained a Recall of more than 90%**. We know that this value still needs to be increased, which can be considered from the following aspects:
 
 1. Mining more and more effective factors and features based on fundamentals or timing perspectives, despite the strong limitations and many missing values of transaction data.
 
