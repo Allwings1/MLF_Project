@@ -119,21 +119,25 @@ Originally, our Recall was only around 80%:
 After improvement and optimization, Recall was increased to more than 90%, and RUC also made great progress:
 
 <div align='center'>
-    <img src='pics/改进1.png' width='650'/>
+    <img src='pics/ConMatr_AFT.png' width='650'/>
 </div>  
 
 <div align='center'>
-    <img src='pics/改进2.png' width='650'/>
+    <img src='pics/ConMatr_after.png' width='650'/>
 </div>  
 
 * We also trained the LSTM model and obtain the loss and confusion matrix.
 
 <div align='center'>
-    <img src='pics/改进3.png' width='650'/>
+    <img src='pics/LSTM_after.png' width='650'/>
 </div>  
 
-## Limitation of our models and improvements
+## Future outlook
 
-* First, it's often difficult to predict defaults using transaction data alone, but we'll still want to give it a try. 
-* Second, since the transaction data is very sparse, our primary goal is to process this data and extract relatively effective features. Compared with the previous practice without time weighting and group summation, our results are optimized.
-* Third, for such imbalanced data, since we need to predict or prevent the occurrence of small probability events, we decided to focus on improving recall instead of accuracy. After 2 days, we will continue to study and hopefully improve these metrics.
+In this Project, we cleaned and constructed the characteristics of the transaction default data. On this basis, we used five kinds of machine learning models for predictive analysis, and obtained a Recall of more than 90%. We know that this value still needs to be increased, which can be considered from the following aspects:
+
+1. Mining more and more effective factors and features based on fundamentals or timing perspectives, despite the strong limitations and many missing values of transaction data.
+
+2. Increase the data amount of default information, or make more attempts from the perspective of oversampling.
+
+3. Add additional trading information. Transaction data alone may not provide a full extraction of default information, as incidental decisions are mixed in with default decisions.
