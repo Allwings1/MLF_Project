@@ -95,6 +95,14 @@ Considering the limitations of the features of the original data,  for all IMAGE
     <img src='pics/2heat.png' width='650'/>
 </div>  
 
+### 4. More feature mining...
+
+Here, we consider difference and volatility.
+
+* Method 1. Consider volotility of the difference by each product.
+  
+* Method 2. Calculate the total volume of all transactions in a month firstly, and then consider the volatility of these volumes.
+
 ## Division of Training & Test Set and Feature Selection
 
 * In this section, we split the data set into training samples (75%) and test samples (25%).
