@@ -119,11 +119,11 @@ Originally, our Recall was only around 80%:
 After improvement and optimization, Recall was increased to more than 90%, and RUC also made great progress:
 
 <div align='center'>
-    <img src='pics/ConMatr_AFT.png' width='650'/>
+    <img src='pics/ConMatr_after.png' width='650'/>
 </div>  
 
 <div align='center'>
-    <img src='pics/ConMatr_after.png' width='650'/>
+    <img src='pics/ROC_after.png' width='650'/>
 </div>  
 
 * We also trained the LSTM model and obtain the loss and confusion matrix.
