@@ -77,6 +77,14 @@ Considering the limitations of the features of the original data,  for all IMAGE
     <img src='pics/+1sum.png' width='650'/>
 </div>  
 
+### 4. More feature mining...
+
+Here, we consider difference and volatility.
+
+* Method 1. Consider volotility of the difference by each product.
+  
+* Method 2. Calculate the total volume of all transactions in a month firstly, and then consider the volatility of these volumes.
+
 ## Descriptive Statistics and Correlation Analysis
 
 * After data processing, we once again emphasize that this data is seriously imbalance. As we can see from the graph of the kernel function, basically all the data is piled up at 0.
@@ -94,14 +102,6 @@ Considering the limitations of the features of the original data,  for all IMAGE
 <div align='center'>
     <img src='pics/2heat.png' width='650'/>
 </div>  
-
-### 4. More feature mining...
-
-Here, we consider difference and volatility.
-
-* Method 1. Consider volotility of the difference by each product.
-  
-* Method 2. Calculate the total volume of all transactions in a month firstly, and then consider the volatility of these volumes.
 
 ## Division of Training & Test Set and Feature Selection
 
